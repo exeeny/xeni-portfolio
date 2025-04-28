@@ -104,7 +104,6 @@ export const Background = memo(({children}) => {
         id="tsparticles"
         particlesLoaded={particlesLoaded}
         options={options}
-        loaded={() => console.log("Particles Loaded!")}
       />
         </div>
 
