@@ -52,9 +52,9 @@ function App() {
 
 
 
-      <div className="flex flex-col gap-2 min-h-screen justify-center items-center ">
+      <div className="flex flex-row min-h-screen justify-center items-center overflow-x-hidden overflow-y-auto">
 
-        <div className="w-full h-screen md:max-w-3xl md:mx-auto md:rounded-lg md:shadow-md md:h-auto bg-mainbg flex flex-col ">
+        <div className="w-full h-screen md:max-w-3xl md:rounded-lg md:shadow-md md:h-auto bg-mainbg flex flex-col ">
           {/* heading */}
           <div className="flex flex-start font-medium text-center rounded-lg shadow-sm shadow-accent">
             <div className="p-4 text-text text-2xl font-normal">home</div>
@@ -72,7 +72,7 @@ function App() {
             </div>
 
             {/* buttons */}
-            <div className="links flex justify-around m-2 w-full">
+            <div className="flex flex-col gap-2 p-2 sm:flex-row sm:justify-around m-2 w-full">
 
               <motion.button
                 whileHover={{ scale: 1.1 }}
