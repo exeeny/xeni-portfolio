@@ -54,7 +54,7 @@ function App() {
 
       <div className="flex flex-row min-h-screen justify-center items-center overflow-x-hidden overflow-y-auto">
 
-        <div className="w-full h-screen md:max-w-3xl md:rounded-lg md:shadow-md md:h-auto bg-mainbg flex flex-col ">
+        <div className="w-full h-full md:max-w-3xl md:rounded-lg md:shadow-md md:h-auto bg-mainbg flex flex-col">
           {/* heading */}
           <div className="flex flex-start font-medium text-center rounded-lg shadow-sm shadow-accent">
             <div className="p-4 text-text text-2xl font-normal">home</div>
@@ -64,15 +64,15 @@ function App() {
           <div className='flex flex-1 flex-col items-center justify-center'>
 
             <div className="flex justify-between flex-col items-center md:flex-row p-4">
-              <img className="h-auto max-w-xs m-4" src="https://i.pinimg.com/originals/fd/30/84/fd30846b19ff684f079d23b217a481e8.gif" alt="" />
-              <div className="m-2 flex flex-col items-center w-sm">
+              <img className="h-auto max-w-3xs md:max-w-xs m-4" src="https://i.pinimg.com/originals/fd/30/84/fd30846b19ff684f079d23b217a481e8.gif" alt="" />
+              <div className=" flex flex-col items-center w-auto">
                 <h1 className="mb-2 text-5xl font-bold tracking-tight text-primary">hi, i'm Xeni!</h1>
                 <p className="font-normal text-text text-2xl p-2">Beginner developer passionate about learning and building cool things╰(▔∀▔)╯</p>
               </div>
             </div>
 
             {/* buttons */}
-            <div className="flex flex-col gap-2 p-2 sm:flex-row sm:justify-around m-2 w-full">
+            <div className="flex flex-col gap-2 p-2 sm:flex-row sm:justify-around w-full">
 
               <motion.button
                 whileHover={{ scale: 1.1 }}
