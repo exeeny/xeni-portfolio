@@ -1,26 +1,38 @@
 import { motion } from "motion/react";
+import { p } from "motion/react-client";
 
 const languagesAndFrameworks = [
-    "Python",
     "C",
+    "Python",
     "JavaScript",
     "PHP",
     "React",
     "Express.js",
     "Laravel",
+    "SQL"
   ];
   
   const tools = [
+    "MongoDB",
+    "MySQL",
     "Tailwind CSS",
     "Bootstrap",
-    "SQL",
-    "MongoDB",
     "Git",
   ];
+
+  const otherSkills = [
+    "audio/video editing",
+    "Scriptwriting and production for TV, radio, and digital platforms",
+    "Social media content creation and management",
+    "Translation and subtitling of video/live broadcasts",
+    "Article writing and editing"
+
+
+  ]
   
 const Skills = (props) => {
     return (
-        <div className="rounded-lg bg-mainbg w-full md:max-w-xl h-full flex flex-col">
+        <div className="rounded-lg bg-mainbg w-full md:max-w-xl h-full flex flex-col md:h-140">
 
           {/* Modal Header */}
           <div {...props.listeners} className="cursor-default md:cursor-move flex justify-between items-center rounded-lg bg-secondary p-4 text-white">
@@ -37,10 +49,10 @@ const Skills = (props) => {
           </div>
 
 
-        <div className="p-6 flex-1 flex flex-col items-center justify-center text-text">
+        <div className="overflow-y-auto flex flex-col items-center p-3">
           {/* Languages & Frameworks */}
           <div className="flex flex-col items-center justify-center">
-            <h3 className="text-2xl font-bold text-primary mb-3">Languages & Frameworks</h3>
+            <h3 className="text-2xl font-bold text-primary mb-3">Languages & Frameworks & Libraries</h3>
             <div className="flex flex-wrap gap-3 justify-center">
               {languagesAndFrameworks.map((item) => (
                 <motion.button
@@ -77,9 +89,21 @@ const Skills = (props) => {
     <div className="mt-8 text-center max-w-md">
       <h3 className="text-2xl font-bold text-primary mb-3">Important!</h3>
       <p className="text-lg text-text">
-        I am more of a web developer specializing in building websites and web applications using <span className="text-primary font-semibold">React</span> and <span className="text-primary font-semibold">PHP</span>. 
+        I'm leaning more towards web development, building websites and web applications using <span className="text-primary font-semibold">React</span> and <span className="text-primary font-semibold">PHP</span>. 
         You can find some of my projects on my <a href="https://github.com/exeeny" target="_blank" rel="noopener noreferrer" className="text-accent underline hover:text-primary transition">GitHub</a>!
       </p>
+    </div>
+
+    {/* other info */}
+    <div className="mt-8 text-center max-w-md">
+    <h3 className="text-2xl font-bold text-primary mb-3">What else i can do?</h3>
+    <ul className="text-lg text-text">
+       {otherSkills.map((item) => (
+        <li>☆ {item}</li>
+       )
+
+      )}
+      </ul>
     </div>
 
 

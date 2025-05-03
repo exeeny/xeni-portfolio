@@ -61,7 +61,7 @@ function App() {
           </div>
 
           {/* info */}
-          <div className='flex flex-1 flex-col items-center justify-center'>
+          <div className='flex flex-1 flex-col items-center justify-center p-2'>
 
             <div className="flex justify-between flex-col items-center md:flex-row p-4">
               <img className="h-auto max-w-3xs md:max-w-xs m-4" src="https://i.pinimg.com/originals/fd/30/84/fd30846b19ff684f079d23b217a481e8.gif" alt="" />
