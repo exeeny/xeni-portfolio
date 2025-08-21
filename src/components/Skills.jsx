@@ -9,12 +9,14 @@ const languagesAndFrameworks = [
     "React",
     "Express.js",
     "Laravel",
+    "Symfony",
     "SQL"
   ];
   
   const tools = [
     "MongoDB",
     "MySQL",
+    "PostgreSQL",
     "Tailwind CSS",
     "Bootstrap",
     "Git",

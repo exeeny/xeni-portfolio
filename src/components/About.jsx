@@ -70,10 +70,19 @@ const About = (props) => {
             Position: Logistics Manager
           </p>
 
-          <ul className="mt-2 space-y-1 list-disc list-inside text-text text-base ">
+          {/* <ul className="mt-2 space-y-1 list-disc list-inside text-text text-base ">
             <li>Managed end-to-end supply chain operations including transportation, inventory, and warehouse coordination.</li>
             <li>Added and onboarded new transportation companies and drivers into the customer database.</li>
-          </ul>
+          </ul> */}
+
+          <div className="flex flex-col sm:flex-row sm:justify-between mt-2 font-semibold text-lg">
+            <h4>Itransition</h4>
+            <span className="text-lg">May 2025 – July 2025</span>
+          </div>
+
+          <p className="mt-1 text-primary font-medium">
+            Commercial Software Development Intern (PHP)
+          </p>
         </section>
 
         <section className="mt-6">
